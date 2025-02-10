@@ -12,6 +12,7 @@
         height: 400px;
         width: 500px;
         border: 1px solid black;
+        background-color: antiquewhite;
     }
     .blub{
         display: block;
@@ -29,13 +30,25 @@
         font-size: 20px;
     }     
 </style>
-<body>
+<body id="body">
   <div class="container">
-<img src="./img/blubon.png" id="blubon" class="blub">
+<img src="./img/blubon.png" id="blub" class="blub">
 <div class="btn-container">
-<button id="of" class="btn">Off</button>
-<button id="on" class="btn">On</button>
+<button  class="btn" onclick="off()">Off</button>
+<button  class="btn" onclick="on()">On</button>
 </div>
   </div>  
+ <script>
+    const blubElement=document.getElementById("blub");
+    const bodyElement=document.getElementById("body");
+     function on(){
+       blubElement.src = "./img/blubon.png";
+       bodyElement.style.backgroundColor="#f2f2f2";
+     }
+     function off(){
+       blubElement.src = "img/bulboff.png";
+       bodyElement.style.backgroundColor="#262626";
+     }
+ </script>
 </body>
 </html>
