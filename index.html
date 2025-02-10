@@ -28,14 +28,23 @@
         width: 15%;
          border-radius: 25px;
         font-size: 20px;
-    }     
+    }   
+    .btn-on{
+        background-color:red;
+        color: white;
+    } 
+    .btn-off{
+        background-color: green;
+        color: white;
+    }
+
 </style>
 <body id="body">
   <div class="container">
 <img src="./img/blubon.png" id="blub" class="blub">
 <div class="btn-container">
-<button  class="btn" onclick="off()">Off</button>
-<button  class="btn" onclick="on()">On</button>
+<button  class="btn btn-on" onclick="off()">Off</button>
+<button  class="btn btn-off" onclick="on()">On</button>
 </div>
   </div>  
  <script>
